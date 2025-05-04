@@ -1,0 +1,24 @@
+.hover {
+  padding: 5px;
+  color: var(--color-text-gray);
+  cursor: pointer;
+  padding: 5px;
+  overflow-wrap: anywhere;
+
+  &:hover {
+    border-radius: 5px;
+    background-color: var(--color-hover);
+  }
+}
+
+.hoverWhite {
+  &:hover {
+    color: var(--color-white);
+  }
+}
+
+.hoverDanger {
+  &:hover {
+    color: var(--color-danger);
+  }
+}

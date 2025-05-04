@@ -1,0 +1,119 @@
+.sidebar {
+  display: flex;
+  flex: 0.35;
+  height: 100vh;
+
+  .sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-black-light);
+    padding: 7px 15px;
+
+    .serverIcon {
+      position: relative;
+      width: 55px;
+      height: 55px;
+      border-radius: 9999px;
+      background-color: var(--color-black-light);
+      margin: 10px 0;
+
+      img {
+        position: absolute;
+        width: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .sidebarRight {
+    position: relative;
+    background-color: var(--color-gray-dark);
+    width: 300px;
+    flex-grow: 1;
+
+    .sidebarTop {
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .sidebarChannels {
+      height: calc(100% - 140px);
+      overflow-y: scroll;
+      padding: 13px;
+
+      .sidebarChannelsHeader {
+        color: var(--color-white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5px 0 0;
+
+        .sidebarHeader {
+          display: flex;
+          align-items: center;
+          font-size: 1.1rem;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .sidebarChannelName {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 5px;
+
+      .sidebarChannelHash {
+        font-size: 22px;
+        padding-right: 10px;
+      }
+    }
+
+    .sidebarFooter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      width: 90%;
+      bottom: 0;
+      margin: 0 10px;
+      padding: 10px 0;
+      border-top: 1px solid var(--color-gray);
+
+      .sidebarAccount {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+        }
+
+        .userAccount {
+          margin-left: 10px;
+
+          .userAccountName {
+            color: var(--color-white);
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+
+          span {
+            color: var(--color-gray);
+          }
+        }
+      }
+      .sidebarVoice {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

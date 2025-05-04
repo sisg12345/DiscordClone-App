@@ -1,0 +1,14 @@
+.searchInput {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-text-background);
+  padding: 3px;
+  border-radius: 3px;
+
+  input {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--color-white);
+  }
+}

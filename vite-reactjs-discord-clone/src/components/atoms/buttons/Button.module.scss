@@ -1,0 +1,35 @@
+.button {
+  color: var(--color-white) !important;
+  padding: 10px 20px !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+}
+
+.primary {
+  background-color: var(--color-primary) !important;
+
+  &:hover {
+    background-color: var(--color-primary-dark) !important;
+  }
+
+  &:disabled {
+    background-color: var(--color-primary-disable) !important;
+    cursor: not-allowed !important;
+  }
+}
+
+.cancel {
+  background-color: var(--color-gray-dark) !important;
+
+  &:hover {
+    background-color: var(--color-hover-light) !important;
+  }
+}
+
+.danger {
+  background-color: var(--color-danger) !important;
+
+  &:hover {
+    background-color: var(--color-danger-dark) !important;
+  }
+}

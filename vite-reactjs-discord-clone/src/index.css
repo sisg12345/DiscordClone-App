@@ -1,0 +1,26 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #7289da;
+  --color-primary-dark: #5b6eae;
+  --color-primary-disable: #404795;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-black-light: #1a1c20;
+  --color-danger: #fa7a75;
+  --color-danger-dark: #e03e3e;
+  --color-gray: #686a6e;
+  --color-gray-light: #34373c;
+  --color-gray-lighter: #d3d3d3;
+  --color-gray-dark: #2b2d33;
+  --color-text-background: #282831;
+  --color-text-gray: #7b7c85;
+  --color-hover: #33363d;
+  --color-hover-light: #3a3c42;
+  --color-chat-message: #474b53;
+}

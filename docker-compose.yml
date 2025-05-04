@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  app:
+    container_name: discord_clone-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    ports:
+      - "5173:5173"
+    stdin_open: true
+    tty: true

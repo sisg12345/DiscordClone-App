@@ -1,0 +1,158 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  background-color: var(--color-gray-light);
+
+  .chatHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+
+    .chatHeaderLeft {
+      margin-left: 15px;
+      color: var(--color-white);
+
+      .chatHeaderHash {
+        color: var(--color-text-gray);
+        padding-right: 5px;
+      }
+    }
+
+    .chatHeaderRight {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-right: 15px;
+      color: var(--color-text-gray);
+    }
+  }
+
+  .chatMessages {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    overflow-y: scroll;
+
+    .message {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      color: var(--color-white);
+      overflow-wrap: anywhere;
+
+      &:hover {
+        background-color: var(--color-chat-message);
+
+        /* ホバー時に表示 */
+        .messageEditIcons {
+          display: flex;
+        }
+      }
+
+      img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .messageInfo {
+        flex-grow: 1;
+        padding: 20px 20px 20px 10px;
+
+        p {
+          margin: 0;
+
+          span {
+            font-size: 10px;
+            margin: 0 5px;
+          }
+        }
+
+        .messageTimestamp {
+          color: var(--color-text-gray);
+          margin-left: 20px;
+          font-size: 16px;
+        }
+
+        .messageEdit {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            background-color: var(--color-text-background);
+            outline: none;
+            border: none;
+            color: var(--color-white);
+            width: 100%;
+            height: 44px;
+            padding: 0 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+          }
+
+          span {
+            font-size: 12px;
+
+            a {
+              color: var(--color-primary);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .messageEditIcons {
+        position: absolute;
+        display: none;
+        align-items: center;
+        gap: 5px;
+        background-color: var(--color-gray-dark);
+        border-radius: 5px;
+        padding: 5px;
+        right: 25px;
+        top: 5px;
+      }
+    }
+  }
+
+  .chatInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--color-chat-message);
+    margin: 20px;
+    border-radius: 5px;
+
+    form {
+      flex-grow: 1;
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--color-white);
+        padding: 15px;
+        font-size: large;
+        width: 100%;
+      }
+
+      // NOTE: Enter キー送信できるために非表示
+      .chatInputButton {
+        display: none;
+      }
+    }
+
+    .chatInputIcons {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
