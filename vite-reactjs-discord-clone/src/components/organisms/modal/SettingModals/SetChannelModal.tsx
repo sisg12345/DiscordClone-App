@@ -4,7 +4,7 @@ import { DeleteIcon, HighlightOffIcon } from '@/components/atoms/icons/Icons'
 import { FormEvent, useEffect, useState } from 'react'
 import LabeledInput from '@/components/molecules/inputs/LabeledInput'
 import LabeledTextArea from '@/components/molecules/inputs/LabeledTextArea'
-import HoverItemBox from '@/components/layouts/boxes/HoverBox'
+import HoverItemBox from '@/components/layouts/boxes/HoverItemBox'
 import Button from '@/components/atoms/buttons/Button'
 import type { Channel } from '@/types/data'
 

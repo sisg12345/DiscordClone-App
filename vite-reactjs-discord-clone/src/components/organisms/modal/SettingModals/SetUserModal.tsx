@@ -2,7 +2,7 @@ import commonStyles from './Modal.common.module.scss'
 import styles from './SetUserModal.module.scss'
 import Separator from '@/components/atoms/separators/Separator'
 import { HighlightOffIcon, LogoutIcon } from '@/components/atoms/icons/Icons'
-import HoverItemBox from '@/components/layouts/boxes/HoverBox'
+import HoverItemBox from '@/components/layouts/boxes/HoverItemBox'
 import Button from '@/components/atoms/buttons/Button'
 import { useAppSelector } from '@/hooks/useRedux'
 

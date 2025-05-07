@@ -1,5 +1,5 @@
 import styles from '../Sidebar.module.scss'
-import HoverItemBox from '@/components/layouts/boxes/HoverBox'
+import HoverItemBox from '@/components/layouts/boxes/HoverItemBox'
 import { SettingIcon } from '@/components/atoms/icons/Icons'
 import { useAppDispatch } from '@/hooks/useRedux'
 import { setChannelInfo } from '@/stores/slices/channelSlice'
